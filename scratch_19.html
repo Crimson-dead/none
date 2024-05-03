@@ -1,0 +1,82 @@
+<html>
+  <script>
+      var rotate = 0;
+      var invert = 1;
+      var inv;
+      var a = 0;
+      var b = 0;
+      var c = 0;
+      var d = 0;
+      var e = 0;
+      var f = 0;
+      function hello() {
+          if (a > 9) {
+              a = 0;
+          }
+          if (b > 9) {
+              b = 0;
+          }
+          if (c > 9) {
+              c = 0;
+          }
+          if (d > 9) {
+              d = 0;
+          }
+          if (e > 9) {
+              e = 0;
+          }
+          if (f > 9) {
+              f = 0;
+          }
+          document.body.style.background = "#"+a+b+c+d+e+f;
+          a ++;
+          b += 2;
+          c += 3;
+          d += 4;
+          e += 5;
+          f += 6;
+      }
+      function invert_colors() {
+          inv = (invert == 1)?1:0
+          document.body.style.filter = "invert(" + inv + ")"
+          invert *= -1
+      }
+      function _rotate() {
+        if (rotate > 360) {
+          rotate = 0;
+        }
+        document.body.style.filter = "hue-rotate(" + rotate + "deg)"
+        rotate ++;
+      }
+  </script>
+  <style>
+      .greenbutton {
+         background: black;
+         color: #bbff44;
+         border: green;
+         border-width: 10px;
+      }
+      .redbutton {
+         background: black;
+         color: #ff2200;
+         border: red;
+         border-width: 10px;
+      }
+      .bluebutton {
+         background: black;
+         color: #0044ff;
+         border: blue;
+         border-width: 10px;
+      }
+  </style>
+  <body style="filter: invert(0); background:#111111;">
+    <div>
+        <header style="font-size: 50px; color: #88fc09">Welcome to xwn7cfeqcw32r8c2ct27tn2c.onion!</header>
+        <br>
+        <label style="font-size: 30px; color: #88fc09">hello</label>
+    </div>
+    <button onclick="invert_colors()" class="greenbutton">invert colors</button>
+    <button onclick="hello()" class="redbutton">experimental color func</button>
+    <button onclick="_rotate()" class="bluebutton">color rotate</button>
+  </body>
+</html>

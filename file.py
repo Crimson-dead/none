@@ -32,6 +32,7 @@ a = b = c = d = e = f = 1
 to_hex = lambda rgb: "#%02x%02x%02x" % rgb
 import tkinter as tk
 root = tk.Tk()
+root.title(" ")
 root.config(width=root.winfo_screenwidth(), height=root.winfo_screenheight(), bg="red")
 root.attributes("-alpha", 0.5)
 root.after(50, main)

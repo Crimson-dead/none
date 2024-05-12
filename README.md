@@ -1,3 +1,2 @@
 just random programs made in pycharm, my phone or somewhere else
 różne programy, które napisałem w pycharmie (głównie python, html), na telefonie (html), albo gdzieś indziej
-10 May 2024: I've seen and created program in c++, and next I looked at java "Hello World" program...

@@ -1,15 +1,13 @@
-/**
- * You can edit, run, and share this code.
- * play.kotlinlang.org
- */
-fun cube_of(num: Long) {
-    print(num * num * num) // i had problem with return
-}// */
-fun main() {
-    val name = "Frank"
-    var num = 3 // Kotlin let's go!!
-    println("Hello, $name! Square of $num is ${num * num}.")
-    println("Cube of three is… (using function) ")
-    cube_of(3)
-    print("! ") // like in python
+fun cubeOf(num: Long): Long { /* Now ik, the type of 
+    *returned value must be defined
+    */
+    return num * num * num
+}
+
+fun main(args: Array<String>) {
+    val name = "Someone"
+    var num = 3 // Gotcha!
+    println("Hello, ${args[0]}! Square of $num is ${num * num}.")
+    println("Cube of three is… (using function) \n${cubeOf(3)}! ")
+    print("\nCreated by $name. ") // like in python
 }

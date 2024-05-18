@@ -6,8 +6,8 @@ void print(char value)
 int main()
 {
     print("Hello World!"); /* wait, there must be semicolons
-    c++ is really harder than python
-    python is better B)*/
+    *c++ is really harder than python
+    *python is better B)*/
     return 0; // imo weird syntax
     // what happens if it returns 1?
 }

@@ -1,3 +1,5 @@
+# e.g. C:\Users\example\directory> japanese_or_somfing_else.py Crimson-dead
+#      
 from sys import argv
 
 try: name: str = argv[1]
@@ -9,3 +11,4 @@ for i in name.lower():
                   "j": "zu", "k": "me", "l": "ta", "m": "rin", "n": "to", "o": "mo", "p": "no", "q": "ke", "r": "shi",
                   "s": "ari", "t": "chi", "u": "do", "v": "ru", "w": "me", "x": "na", "y": "fu", "z": "zi", ...: ...}.get(i, "\u0001?\u0001"))
 input(f"{"".join(final)}\n")
+ 

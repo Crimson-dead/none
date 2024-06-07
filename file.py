@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     global a, b, c, d, e, f
     e += f
     a += c*2
@@ -10,7 +10,7 @@ def main():
         c *= -1
         a = 255
     if e > 255:
-        f *= -1
+        f *= -1  # A comment
         e = 255
     if b <= 0:
         b = 0
@@ -21,19 +21,18 @@ def main():
     if e <= 0:
         f *= -1
         e = 0
-    try:
-        root.config(bg=to_hex((a, b, e)))
-    except:
-        pass
+    try: root.config(bg=to_hex((a, b, e)))
+    except: pass
     root.after(50, main)
 
 
 a = b = c = d = e = f = 1
 to_hex = lambda rgb: "#%02x%02x%02x" % rgb
 import tkinter as tk
-root = tk.Tk()
+
+root: tk.Tk = tk.Tk()
 root.title(" ")
 root.config(width=root.winfo_screenwidth(), height=root.winfo_screenheight(), bg="red")
-root.attributes("-alpha", 0.5)
+root.attributes("-alpha", .5)
 root.after(50, main)
 root.mainloop()

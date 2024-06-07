@@ -1,6 +1,6 @@
 "Anyone here?"
 # Anyone here?
-a = [0, ]
+a: list = [0, ]
 f = lambda x: round(((x + 1) * 5) / 4)
 for j in range(5):
     for i in a:
